@@ -103,6 +103,7 @@ Jupyter (Python, R, shell) and RStudio (R Markdown) notebooks are the best way t
 
 ## Further reading
 
+- Github tutorials and classes [https://lab.github.com]
 - Genomics Data Science workshops [https://datacarpentry.org/lessons/#genomics-workshop](https://datacarpentry.org/lessons/#genomics-workshop)
 - Reproducible Research in R workshop [https://datacarpentry.org/rr-workshop/](https://datacarpentry.org/rr-workshop/)
 - Finding Your Way To R [https://education.rstudio.com/learn/](https://education.rstudio.com/learn/)
