@@ -109,3 +109,7 @@ Jupyter (Python, R, shell) and RStudio (R Markdown) notebooks are the best way t
 - Finding Your Way To R [https://education.rstudio.com/learn/](https://education.rstudio.com/learn/)
 - R for Data Science [https://r4ds.had.co.nz/index.html](https://r4ds.had.co.nz/index.html)
 - Getting started with Bioconda [https://bioconda.github.io/user/install.html](https://bioconda.github.io/user/install.html)
+
+- https://github.com/ISMB-ECCB-2019-Tutorial-AM4/reproducible-computational-workflows
+
+
