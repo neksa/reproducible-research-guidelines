@@ -1,0 +1,18 @@
+stages:
+  summarize:
+    cmd: python summarize.py
+    deps:
+      - summarize.py
+      - input.json
+    params:
+      - params.json:
+          - minimum_value
+    outs:
+      - summary.json
+  report:
+    cmd: python report.py
+    deps:
+      - report.py
+      - summary.json
+    outs:
+      - report.md

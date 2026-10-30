@@ -1,0 +1,107 @@
+# Replace placeholders for required fields.
+# Document unknown or inapplicable optional values.
+# Each list contains one field template, not a completed record.
+# Store records separately when they have different lifetimes or access controls.
+schema_version: 1
+
+calculation_specification:
+  id: null
+  specification_sha256: null
+  code:
+    repository: null
+    commit: null
+    patch_sha256: null
+  command: null
+  parameters: {}
+  inputs:
+    - id: null
+      sha256: null
+      format: null
+      metadata_sha256: null
+  environment:
+    dependency_lock_sha256: null
+    container_digest: null
+    runtime_requirements: {}
+  randomness:
+    algorithm: null
+    seed: null
+    replicate_id: null
+  acceptance_policy_sha256: null
+  parent_specification_id: null
+  change_reason: null
+
+request:
+  id: null
+  specification_id: null
+  requester: null
+  agent_run_id: null
+  created_at: null
+
+attempt:
+  id: null
+  request_id: null
+  specification_id: null
+  retry_of_attempt_id: null
+  checkpoint_sha256: null
+  started_at: null
+  ended_at: null
+  actual_environment: {}
+  execution_status: null
+  exit_code: null
+  failure_reason: null
+  logs_sha256: null
+  scheduler:
+    system: null
+    job_id: null
+    batch_id: null
+  artifacts:
+    - id: null
+      sha256: null
+      bytes: null
+      format: null
+      uri: null
+  publication_status: null
+  acceptance_status: null
+  validation_report_sha256: null
+  resource_use: {}
+
+collection_version:
+  id: null
+  version: null
+  manifest_sha256: null
+  expected_members_sha256: null
+  selection_policy_sha256: null
+  members:
+    - request_id: null
+      specification_id: null
+      status: null
+      attempt_id: null
+      artifact_sha256: null
+      reason: null
+  parent_collection_version: null
+
+agent_run:
+  id: null
+  implementation_commit: null
+  instructions_sha256: null
+  tool_definitions_sha256: null
+  context_sha256: null
+  trace_sha256: null
+  model_invocations_manifest_sha256: null
+  human_interventions_sha256: null
+  evaluation_policy_sha256: null
+  evaluation_report_sha256: null
+  resource_use: {}
+  replay_limitations: []
+
+release:
+  id: null
+  source_commit: null
+  collection_versions: []
+  claims_manifest_sha256: null
+  reproduction_instructions_uri: null
+  verification_report_sha256: null
+  artifact_inventory_sha256: null
+  access_conditions: null
+  retention_owner: null
+  retention_until: null

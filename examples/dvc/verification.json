@@ -1,0 +1,66 @@
+{
+  "verified_at": "2026-10-29T21:13:54.267412+00:00",
+  "python": "3.12.12",
+  "platform": "macOS-15.5-arm64-arm-64bit",
+  "dvc": "3.66.1",
+  "source_sha256": {
+    "dvc.yaml": "9113cb20196cefa1b3ce5f71b7c5159e52d08407bfb4d3a8019be9571aba1d9c",
+    "input.json": "d9635eee67616fc07f6de22a5473dfaa8efea4f5ca2ccb20ce796b2beb50aa98",
+    "params.json": "1f244688ea073d78fceaf592a25f6f39d2b75d229c7fb51962bd357b33588966",
+    "report.py": "30c6e77629d6d121daccd4b6abde53e310779eeee04bdfcf64b04db8dd483683",
+    "summarize.py": "2487c024c4347492d22b00c8385fe171675f9451490b81449cb86192af918523"
+  },
+  "artifact_sha256": {
+    "input.json": "d9635eee67616fc07f6de22a5473dfaa8efea4f5ca2ccb20ce796b2beb50aa98",
+    "summary.json": "96fe70ea7c4d4ea0ead754f536469e79408cf8dd5b646398b2db6d4810155d25",
+    "report.md": "27dc4e7890d20ed2d2ac1e92a1bb4c00816744e7fc68c5e745c06ba8ecb412b0"
+  },
+  "checks": [
+    {
+      "check": "initial_execution",
+      "status": "pass",
+      "evidence": "Both stages execute; the selected sum is 10 with explicit missing and excluded records."
+    },
+    {
+      "check": "unchanged_pipeline",
+      "status": "pass",
+      "evidence": "DVC skips both stages when dependencies and parameters remain unchanged."
+    },
+    {
+      "check": "parameter_invalidation",
+      "status": "pass",
+      "evidence": "Changing minimum_value to 3 executes both stages and changes the selected sum to 8."
+    },
+    {
+      "check": "run_cache_restoration",
+      "status": "pass",
+      "evidence": "Restoring the original parameter reuses cached results without stage execution."
+    },
+    {
+      "check": "report_only_change",
+      "status": "pass",
+      "evidence": "Changing report code executes only the report stage."
+    },
+    {
+      "check": "forced_recomputation",
+      "status": "pass",
+      "evidence": "Both stage commands execute and reproduce the original artifact hashes."
+    },
+    {
+      "check": "clean_clone_restoration",
+      "status": "pass",
+      "evidence": "An empty independent cache retrieves all three artifacts from the local DVC remote."
+    },
+    {
+      "check": "clean_clone_recomputation",
+      "status": "pass",
+      "evidence": "Both stages execute in the clean clone and reproduce the same hashes."
+    },
+    {
+      "check": "invalid_input_rejection",
+      "status": "pass",
+      "evidence": "Duplicate identifiers fail the summary stage and prevent downstream execution."
+    }
+  ],
+  "scope": "Small local DVC example with invented input data and a filesystem remote."
+}
